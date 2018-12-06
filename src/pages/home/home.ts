@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
         //이미 내장되어 있는 컨트롤러 
 import { NavController, AlertController } from 'ionic-angular';
 import * as firebase from "firebase";
+import { ManagerPage } from '../manager/manager';
 
 
 @Component({
@@ -59,7 +60,12 @@ export class HomePage {
       }]      
     });
     confirm.present();
+    }
 
+
+    //매니저 페이지로 전환! 
+    gotoManagerPage(){
+      this.navCtrl.push(ManagerPage);
 
   }
 

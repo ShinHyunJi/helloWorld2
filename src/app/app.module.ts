@@ -9,6 +9,13 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { ResetEmailPage } from '../pages/resetemail/resetemail';
+import { LoaderProvider } from '../providers/loader/loader';
+import { ManagerPage } from '../pages/manager/manager';
+
+
+import { CategoryPage } from '../pages/category/category';
+import { UserPage } from '../pages/user/user';
+import { NewsPage } from '../pages/news/news';
 
 
 @NgModule({
@@ -17,7 +24,11 @@ import { ResetEmailPage } from '../pages/resetemail/resetemail';
     HomePage,
     LoginPage,
     SignupPage,
-    ResetEmailPage
+    ResetEmailPage,
+    ManagerPage,
+    UserPage,
+    NewsPage,
+    CategoryPage
   ],
   imports: [
     BrowserModule,
@@ -29,12 +40,18 @@ import { ResetEmailPage } from '../pages/resetemail/resetemail';
     HomePage,
     LoginPage,
     SignupPage,
-    ResetEmailPage
+    ResetEmailPage,
+    ManagerPage,
+    UserPage,
+    NewsPage,
+    CategoryPage
+
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    LoaderProvider
   ]
 })
 export class AppModule {}

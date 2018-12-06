@@ -7,7 +7,11 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { ResetEmailPage } from '../pages/resetemail/resetemail';
+import { ManagerPage } from '../pages/manager/manager';
 
+import { NewsPage } from '../pages/news/news';
+import { CategoryPage } from '../pages/category/category';
+import { UserPage } from '../pages/user/user';
 
 import * as firebase from "firebase";
 
